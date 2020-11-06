@@ -17,7 +17,8 @@ function setup() {
 }
 
 function draw() {
-
+background(255,255,255);
+  
 if(hasCollided(bullet,wall)) {
     
     bullet.velocityX = 0;
@@ -29,8 +30,7 @@ if(hasCollided(bullet,wall)) {
       wall.shapeColor=color(0,255,0);
     }
   
-}
-  background(255,255,255);  
+}  
   drawSprites();
 }
 
